@@ -34,7 +34,7 @@
         </div>
         <div class="form-group col-sm-4">
             <label for="inputNumero">Número</label>
-            <input  id="inputNumero" type="text" name="numero" class="form-control"  placeholder="Número" value="{{ empty($item_selecionado->enderecos->numero)  ? '' : $item_selecionado->enderecos->numero}}">
+            <input  id="inputNumero" type="text" name="numero" class="form-control"  placeholder="Número" maxlength="4" value="{{ empty($item_selecionado->enderecos->numero)  ? '' : $item_selecionado->enderecos->numero}}">
         </div>
         <div class="form-group col-sm-4">
             <label for="inputBairro">Bairro</label>

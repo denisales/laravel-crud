@@ -22,7 +22,7 @@
         @foreach ($lista_retorno as $item)
         <tr>
             <td>{{ $item->id }}</td>
-            <td>{{ $item->primeiro_nome }}</td>
+            <td>{{ $item->primeiro_nome }} {{ $item->segundo_nome }}</td>
             <td>{{ $item->data_nascimento }}</td>
             <td>
                 <a class="btn btn-primary btn-sm" href="{{route('cadastro.visualizar', ['id' => $item->id])}}">Visualizar</a>
